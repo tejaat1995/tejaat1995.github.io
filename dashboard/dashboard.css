@@ -1,0 +1,171 @@
+.analytic-section .analytic {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 2px !important;
+}
+
+.content-section .syllabus {
+}
+
+.content-section .card.syllabus {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 2px !important;
+}
+
+.content-section .card.syllabus .card-header {
+  border-left: 10px solid black !important;
+}
+
+.content-section .card.syllabus.syllabus-addition .card-header {
+  border-color: #2498bb !important;
+  color: #2498bb !important;
+}
+
+.content-section .card.syllabus.syllabus-addition .card-footer {
+  background-color: #2498bb !important;
+}
+
+.content-section .card.syllabus.syllabus-addition .card-footer .btn {
+  color: #ffffff !important;
+}
+
+.content-section .card.syllabus.syllabus-adjective_and_adverbs .card-header {
+  border-color: #e9c46a !important;
+  color: #e9c46a !important;
+}
+
+.content-section .card.syllabus.syllabus-adjective_and_adverbs .card-footer {
+  background-color: #e9c46a !important;
+}
+
+.content-section
+  .card.syllabus.syllabus-adjective_and_adverbs
+  .card-footer
+  .btn {
+  color: #ffffff !important;
+}
+
+.content-section .card.syllabus.syllabus-nouns .card-header {
+  border-color: #1d3557 !important;
+  color: #1d3557 !important;
+}
+
+.content-section .card.syllabus.syllabus-nouns .card-footer {
+  background-color: #1d3557 !important;
+}
+
+.content-section .card.syllabus.syllabus-nouns .card-footer .btn {
+  color: #ffffff !important;
+}
+
+.content-section .card.syllabus.syllabus-grammer .card-header {
+  border-color: #ffadad !important;
+  color: #ffadad !important;
+}
+
+.content-section .card.syllabus.syllabus-grammer .card-footer {
+  background-color: #ffadad !important;
+}
+
+.content-section .card.syllabus.syllabus-grammer .card-footer .btn {
+  color: #ffffff !important;
+}
+
+.content-section .card.syllabus.syllabus-phoenix .card-header {
+  border-color: #fb5607 !important;
+  color: #fb5607 !important;
+}
+
+.content-section .card.syllabus.syllabus-phoenix .card-footer {
+  background-color: #fb5607 !important;
+}
+
+.content-section .card.syllabus.syllabus-phoenix .card-footer .btn {
+  color: #ffffff !important;
+}
+
+.content-section .card.syllabus.syllabus-verbs .card-header {
+  border-color: #9b5de5 !important;
+  color: #9b5de5 !important;
+}
+
+.content-section .card.syllabus.syllabus-verbs .card-footer {
+  background-color: #9b5de5 !important;
+}
+
+.content-section .card.syllabus.syllabus-verbs .card-footer .btn {
+  color: #ffffff !important;
+}
+
+.content-section .card.syllabus.syllabus-vocabulary .card-header {
+  border-color: #d4e09b !important;
+  color: #d4e09b !important;
+}
+
+.content-section .card.syllabus.syllabus-vocabulary .card-footer {
+  background-color: #d4e09b !important;
+}
+
+.content-section .card.syllabus.syllabus-vocabulary .card-footer .btn {
+  color: #ffffff !important;
+}
+
+.content-section .card.syllabus.syllabus-word-analysis .card-header {
+  border-color: #ff99c8 !important;
+  color: #ff99c8 !important;
+}
+
+.content-section .card.syllabus.syllabus-word-analysis .card-footer {
+  background-color: #ff99c8 !important;
+}
+
+.content-section .card.syllabus.syllabus-word-analysis .card-footer .btn {
+  color: #ffffff !important;
+}
+
+.take-test {
+  bottom: 32px;
+  right: 32px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.highcharts-figure,
+.highcharts-data-table table {
+  min-width: 320px;
+  max-width: 800px;
+  margin: 1em auto;
+}
+
+.highcharts-data-table table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ebebeb;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+  padding: 0.5em;
+}
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
+
+input[type="number"] {
+  min-width: 50px;
+}
