@@ -238,7 +238,7 @@ $(function () {
                 cursor: 'pointer',
                 dataLabels: {
                     enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                    format: '{point.percentage:.1f} %'
                 }
             }
         },
@@ -247,33 +247,12 @@ $(function () {
             colorByPoint: true,
             data: [{
                 name: '1',
-                y: 61.41,
+                y: 70,
                 sliced: true,
                 selected: true
             }, {
                 name: '2',
-                y: 11.84
-            }, {
-                name: '3',
-                y: 10.85
-            }, {
-                name: '4',
-                y: 4.67
-            }, {
-                name: '5',
-                y: 4.18
-            }, {
-                name: '6',
-                y: 1.64
-            }, {
-                name: '7',
-                y: 1.6
-            }, {
-                name: '8',
-                y: 1.2
-            }, {
-                name: '9',
-                y: 2.61
+                y: 30
             }]
         }]
     });

@@ -96,7 +96,8 @@
             <h5 class="mt-4">Results</h5>
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
-                    <div class="card cursor-pointer analytic h-100 border-0">
+                    <div class="card cursor-pointer analytic h-100 border-0" data-toggle="modal"
+                        data-target="#checkModal">
                         <div class="card-body">
                             <div class="d-flex h-100 align-items-center">
                                 <ion-icon name="documents-outline" class="mr-3" style="font-size:36px">
@@ -107,8 +108,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
-                    <div class="card cursor-pointer analytic h-100 border-0">
-                        <div class="card-body" data-toggle="modal" data-target="#certificateModal">
+                    <div class="card cursor-pointer analytic h-100 border-0" data-toggle="modal" data-target="#certificateModal">
+                        <div class="card-body">
                             <div class="d-flex h-100 align-items-center">
                                 <ion-icon name="download-outline" class="mr-3" style="font-size:36px"></ion-icon>
                                 <h5 class="font-size-16 m-0">Download Certificate</h5>
@@ -355,14 +356,14 @@
                                             for="option-2">Cat have 4 legs</label><br>
                                     </div>
                                     <div class="option">
-                                        <input type="checkbox" class="btn-check" id="option-3" autocomplete="off">
-                                        <label class="btn btn-block text-left pl-4 rounded-pill text-white"
-                                            style="background:#00C851" for="option-3">Cat have 2 legs</label><br>
+                                        <input type="checkbox" class="btn-check" id="option-2" autocomplete="off">
+                                        <label class="btn btn-block text-left pl-4 border rounded-pill"
+                                            for="option-2">Cat have 2 legs</label><br>
                                     </div>
                                     <div class="option">
-                                        <input type="checkbox" class="btn-check" id="option-4" autocomplete="off">
-                                        <label class="btn btn-block text-left pl-4 rounded-pill text-white"
-                                            style="background:#ff4444" for="option-4">Cat have 7 legs</label><br>
+                                        <input type="checkbox" class="btn-check" id="option-2" autocomplete="off">
+                                        <label class="btn btn-block text-left pl-4 border rounded-pill"
+                                            for="option-2">Cat have 7 legs</label><br>
                                     </div>
                                 </form>
                             </div>
@@ -377,16 +378,76 @@
     </div>
     <!-- Test Modal End's -->
 
+    <!-- Check Results Modal Start's -->
+    <div class="modal fade" id="checkModal" tabindex="-1" aria-labelledby="checkModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel" style="color:#406CD4">
+                        English 2020 midterm test</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <p><b>1. </b>What is the correct answer choose one?</p>
+                                <form>
+                                    <div class="option">
+                                        <input type="checkbox" class="btn-check" id="option-1" autocomplete="off">
+                                        <label class="btn btn-block text-left pl-4 border rounded-pill"
+                                            for="option-1">Cat have 3 legs</label><br>
+                                    </div>
+                                    <div class="option">
+                                        <input type="checkbox" class="btn-check" id="option-2" autocomplete="off">
+                                        <label class="btn btn-block text-left pl-4 border rounded-pill"
+                                            for="option-2">Cat have 4 legs</label><br>
+                                    </div>
+                                    <div class="option">
+                                        <input type="checkbox" class="btn-check" id="option-3" autocomplete="off">
+                                        <label class="btn btn-block text-left pl-4 rounded-pill text-white"
+                                            style="background:#00C851" for="option-3">
+                                            <div class="clearfix">
+                                                <span class="float-left">Cat have 2 legs</span>
+                                                <span class="float-right pr-3">Yes</span>
+                                            </div></label><br>
+                                    </div>
+                                    <div class="option">
+                                        <input type="checkbox" class="btn-check" id="option-4" autocomplete="off">
+                                        <label class="btn btn-block text-left pl-4 rounded-pill text-white"
+                                            style="background:#ff4444" for="option-4">
+                                            <div class="clearfix">
+                                                <span class="float-left">Cat have 7 legs</span>
+                                                <span class="float-right pr-3">No</span>
+                                            </div>
+                                        </label><br>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pt-0 border-0">
+                    <button type="button" class="btn btn-info w-25" style="background:#2498BB">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Check Results Modal End's -->
+
     <!-- Test Modal Start's -->
     <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-body p-0">
-                    <button type="button" class="close position-absolute close-certificate" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close position-absolute close-certificate" data-dismiss="modal"
+                        aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <img src="../images/certificate.png" class="w-100 h-100"/>
+                    <img src="../images/certificate.png" class="w-100 h-100" />
                 </div>
             </div>
         </div>
