@@ -18,10 +18,15 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
     <script src="./dashboard.js"></script>
     <title>Dashboard</title>
 </head>
@@ -59,43 +64,65 @@
     <!-- Header End's -->
 
     <!-- Analytic Section Start's -->
-    <section id="analytic" class="analytic-section bg-white py-5">
+    <section id="analytic" class="analytic-section py-5">
         <div class="px-4">
+            <h5>Dashboard</h5>
             <div class="row align-items-stretch">
                 <div class="col-sm-12 col-md-6 col-lg-4 h-100">
                     <div class="card analytic h-100 border-0 mb-3">
-                        <div class="card-body">
+                        <div class="card-body overflow-auto">
                             <h5 class="card-title">Time taken</h5>
-                            <figure class="highcharts-figure">
-                                <div id="column-chart-container" style="width:100%; height:200px;"></div>
-                            </figure>
+                            <div id="column-chart-container" class="w-100 mt-4" style="height:250px;"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 h-100">
                     <div class="card analytic h-100 border-0 mb-3">
-                        <div class="card-body">
+                        <div class="card-body overflow-auto">
                             <h5 class="card-title">Performance</h5>
-                            <figure class="highcharts-figure">
-                                <div id="solidgauge-chart-container" style="width:100%; height:200px;"></div>
-                            </figure>
+                            <div id="solidgauge-chart-container" class="w-100 mt-4" style="height:250px;"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 h-100">
                     <div class="card analytic h-100 border-0 mb-3">
-                        <div class="card-body">
+                        <div class="card-body overflow-auto">
                             <h5 class="card-title">Course completion</h5>
-                            <figure class="highcharts-figure">
-                                <div id="pie-chart-container" style="width:100%; height:200px;"></div>
-                            </figure>
+                            <div id="pie-chart-container" class="w-100 mt-4" style="height:250px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 class="mt-4">Results</h5>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card cursor-pointer analytic h-100 border-0">
+                        <div class="card-body">
+                            <div class="d-flex h-100 align-items-center">
+                                <ion-icon name="documents-outline" class="mr-3" style="font-size:36px">
+                                </ion-icon>
+                                <h5 class="font-size-16 m-0">Check Results</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card cursor-pointer analytic h-100 border-0">
+                        <div class="card-body" data-toggle="modal" data-target="#certificateModal">
+                            <div class="d-flex h-100 align-items-center">
+                                <ion-icon name="download-outline" class="mr-3" style="font-size:36px"></ion-icon>
+                                <h5 class="font-size-16 m-0">Download Certificate</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="content" class="content-section py-5" style="background: #F5F5F5">
+    <!-- Analytic Section End's -->
+
+    <!-- Content Section Start's -->
+    <section id="content" class="content-section py-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -123,7 +150,7 @@
                             </div>
                         </div>
                         <div class="card-footer border-0">
-                            <button class="btn btn-block rounded-0">See all 48 skills ></button>
+                            <a class="btn btn-block rounded-0">See all 48 skills ></a>
                         </div>
                     </div>
                 </div>
@@ -146,7 +173,7 @@
                             </div>
                         </div>
                         <div class="card-footer border-0">
-                            <button class="btn btn-block rounded-0">See all 48 skills ></button>
+                            <a class="btn btn-block rounded-0">See all 48 skills ></a>
                         </div>
                     </div>
                 </div>
@@ -169,7 +196,7 @@
                             </div>
                         </div>
                         <div class="card-footer border-0">
-                            <button class="btn btn-block rounded-0">See all 48 skills ></button>
+                            <a class="btn btn-block rounded-0">See all 48 skills ></a>
                         </div>
                     </div>
                 </div>
@@ -192,7 +219,7 @@
                             </div>
                         </div>
                         <div class="card-footer border-0">
-                            <button class="btn btn-block rounded-0">See all 48 skills ></button>
+                            <a class="btn btn-block rounded-0">See all 48 skills ></a>
                         </div>
                     </div>
                 </div>
@@ -215,7 +242,7 @@
                             </div>
                         </div>
                         <div class="card-footer border-0">
-                            <button class="btn btn-block rounded-0">See all 48 skills ></button>
+                            <a class="btn btn-block rounded-0" href="../test/test.html">See all 48 skills ></a>
                         </div>
                     </div>
                 </div>
@@ -238,7 +265,7 @@
                             </div>
                         </div>
                         <div class="card-footer border-0">
-                            <button class="btn btn-block rounded-0">See all 48 skills ></button>
+                            <a class="btn btn-block rounded-0">See all 48 skills ></a>
                         </div>
                     </div>
                 </div>
@@ -261,7 +288,7 @@
                             </div>
                         </div>
                         <div class="card-footer border-0">
-                            <button class="btn btn-block rounded-0">See all 48 skills ></button>
+                            <a class="btn btn-block rounded-0">See all 48 skills ></a>
                         </div>
                     </div>
                 </div>
@@ -284,19 +311,87 @@
                             </div>
                         </div>
                         <div class="card-footer border-0">
-                            <button class="btn btn-block rounded-0">See all 48 skills ></button>
+                            <a class="btn btn-block rounded-0">See all 48 skills ></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Classes List End's -->
+    <!-- Content List End's -->
 
     <!-- Take Test Button Start's -->
-    <button class="btn btn-info btn-lg rounded-pill font-size-16 position-fixed take-test">Take a test on
-        grammer</button>
+    <button class="btn btn-info btn-lg rounded-pill font-size-16 position-fixed take-test" data-toggle="modal"
+        data-target="#testModal">
+        Take a test on grammer
+    </button>
     <!-- Take Test Button End's -->
+
+    <!-- Test Modal Start's -->
+    <div class="modal fade" id="testModal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel" style="color:#406CD4">
+                        English 2020 midterm test</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <p><b>1. </b>What is the correct answer choose one?</p>
+                                <form>
+                                    <div class="option">
+                                        <input type="checkbox" class="btn-check" id="option-1" autocomplete="off">
+                                        <label class="btn btn-block text-left pl-4 border rounded-pill"
+                                            for="option-1">Cat have 3 legs</label><br>
+                                    </div>
+                                    <div class="option">
+                                        <input type="checkbox" class="btn-check" id="option-2" autocomplete="off">
+                                        <label class="btn btn-block text-left pl-4 border rounded-pill"
+                                            for="option-2">Cat have 4 legs</label><br>
+                                    </div>
+                                    <div class="option">
+                                        <input type="checkbox" class="btn-check" id="option-3" autocomplete="off">
+                                        <label class="btn btn-block text-left pl-4 rounded-pill text-white"
+                                            style="background:#00C851" for="option-3">Cat have 2 legs</label><br>
+                                    </div>
+                                    <div class="option">
+                                        <input type="checkbox" class="btn-check" id="option-4" autocomplete="off">
+                                        <label class="btn btn-block text-left pl-4 rounded-pill text-white"
+                                            style="background:#ff4444" for="option-4">Cat have 7 legs</label><br>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pt-0 border-0">
+                    <button type="button" class="btn btn-info w-25" style="background:#2498BB">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Test Modal End's -->
+
+    <!-- Test Modal Start's -->
+    <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <button type="button" class="close position-absolute close-certificate" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <img src="../images/certificate.png" class="w-100 h-100"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Test Modal End's -->
 
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->

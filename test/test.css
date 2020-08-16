@@ -1,0 +1,48 @@
+.content .concept {
+  font-size: 30px !important;
+}
+
+.skills h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #5f5884;
+}
+
+.skills ul li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.skills ul li p {
+  font-size: 14px;
+  margin-bottom: 5px !important;
+}
+
+.skills ul li p b {
+  margin-right: 5px !important;
+}
+
+.list-group {
+  width: 100px;
+  margin: 25px;
+}
+
+.list-group .list-group-item {
+  border: none !important;
+}
+
+.list-group .list-group-item.active {
+  background: #5f5884;
+}
+
+@media (min-width: 360px), (max-width: 768px) {
+  .skills ul li {
+    margin-left: -30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .skills ul li {
+    margin-left: -40px;
+  }
+}

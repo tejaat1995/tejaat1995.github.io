@@ -3,9 +3,6 @@
   border-radius: 2px !important;
 }
 
-.content-section .syllabus {
-}
-
 .content-section .card.syllabus {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   border-radius: 2px !important;
@@ -144,28 +141,54 @@
   width: 100%;
   max-width: 500px;
 }
+
 .highcharts-data-table caption {
   padding: 1em 0;
   font-size: 1.2em;
   color: #555;
 }
+
 .highcharts-data-table th {
   font-weight: 600;
   padding: 0.5em;
 }
+
 .highcharts-data-table td,
 .highcharts-data-table th,
 .highcharts-data-table caption {
   padding: 0.5em;
 }
+
 .highcharts-data-table thead tr,
 .highcharts-data-table tr:nth-child(even) {
   background: #f8f8f8;
 }
+
 .highcharts-data-table tr:hover {
   background: #f1f7ff;
 }
 
 input[type="number"] {
   min-width: 50px;
+}
+
+.option .btn {
+  padding: 8px;
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-check:active + .btn {
+  border-color: #2498bb !important;
+}
+
+.close-certificate {
+  right: 10px;
+  color: white;
+  top: 10px;
+  opacity: 1;
 }
