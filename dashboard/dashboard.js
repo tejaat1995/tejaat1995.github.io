@@ -200,7 +200,7 @@ $(function () {
                 color: Highcharts.getOptions().colors[1],
                 radius: '87%',
                 innerRadius: '63%',
-                y: 65
+                y: 60
             }]
         }, {
             name: '3',
@@ -224,6 +224,7 @@ $(function () {
             text: null
         },
         credits: false,
+        legends: true,
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
         },
@@ -239,8 +240,9 @@ $(function () {
                 dataLabels: {
                     enabled: true,
                     format: '{point.percentage:.1f} %'
-                }
-            }
+                },
+                showInLegend: true
+            },
         },
         series: [{
             name: 'Brands',
