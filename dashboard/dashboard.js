@@ -67,9 +67,7 @@ $(function () {
             text: null
         },
         xAxis: {
-            categories: [
-                'Time',
-            ],
+            categories: ['Time'],
             crosshair: true
         },
         yAxis: {
@@ -91,19 +89,27 @@ $(function () {
             }
         },
         series: [{
-            name: '1',
+            name: 'Jan',
             data: [49.9]
 
         }, {
-            name: '2',
+            name: 'Feb',
             data: [83.6]
 
         }, {
-            name: '3',
+            name: 'Mar',
             data: [48.9]
 
         }, {
-            name: '4',
+            name: 'Apr',
+            data: [42.4]
+
+        }, {
+            name: 'May',
+            data: [48.9]
+
+        }, {
+            name: 'Jun',
             data: [42.4]
 
         }]
@@ -124,6 +130,7 @@ $(function () {
         },
 
         credits: false,
+        legends: true,
         tooltip: {
             borderWidth: 0,
             backgroundColor: 'none',
@@ -172,7 +179,7 @@ $(function () {
             min: 0,
             max: 100,
             lineWidth: 0,
-            tickPositions: []
+            tickPositions: [],
         },
 
         plotOptions: {
@@ -218,7 +225,6 @@ $(function () {
             plotBorderWidth: null,
             plotShadow: false,
             type: 'pie',
-            renderTo: 'pie-chart-container'
         },
         title: {
             text: null
