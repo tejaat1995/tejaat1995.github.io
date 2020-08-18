@@ -16,3 +16,12 @@ body {
 .cursor-pointer {
   cursor: pointer;
 }
+
+.cover-poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/backgrounds/bg-masthead.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

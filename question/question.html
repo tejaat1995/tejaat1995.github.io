@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/custom_theme.css" />
+    <link rel="stylesheet" href="../styles/utils.css" />
+    <link rel="stylesheet" href="./question.css" />
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <title>Question</title>
+</head>
+
+<body>
+    <!-- Header Start's -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-orange navbar-expand-sm px-4">
+            <a class="navbar-brand" href="../dashboard/dashboard.html">
+                Pepper Cloud
+            </a>
+            <button type="button" data-toggle="collapse" data-target="#navigatiopn" aria-controls="navigatiopn"
+                class="navbar-toggler collapsed">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navigatiopn">
+                <div class="ml-auto mr-4 navbar-nav" role="list">
+                    <a class="nav-link">
+                        <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg"
+                            width="40" height="40" class="rounded-circle">
+                    </a>
+                    <div class="align-middle text-white pt-1">
+                        <p class="m-0">Mothilal</p>
+                        <p class="m-0">Class 3, Bangalore.</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End's -->
+
+    <!-- Analytic Section Start's -->
+    <section id="question" class="question-section">
+        <ul class="nav nav-tabs mx-auto">
+            <li class="nav-item">
+                <a class="nav-link border-0 border-bottom border-primary"
+                    style="border-width: 3px !important;">Maths</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Engilsh</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">National Curriculum</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Awards</a>
+            </li>
+        </ul>
+        <ul class="nav bg-light p-2">
+            <li class="mx-3">Class I</li>
+            <li>></li>
+            <li class="mx-3">A.1 Counting review - up to 10</li>
+        </ul>
+        <div class="mx-auto w-50 pt-3">
+            <select class="form-select" placeholder="Learn with an example">
+                <option value="example_1">Example 1</option>
+                <option value="example_2">Example 2</option>
+                <option value="example_3">Example 3</option>
+            </select>
+        </div>
+        <div class="container px-lg-4">
+            <h5 class="mt-4">Results</h5>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card cursor-pointer bg-success text-white analytic h-100 border-0">
+                        <div class="card-body">
+                            <div class="d-flex h-100 align-items-center">
+                                <span><b style="font-size:36px">0</b></span>
+                                <h5 class="font-size-16 m-0 ml-3"> Questions Answered</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card cursor-pointer bg-orange text-white analytic h-100 border-0">
+                        <div class="card-body">
+                            <div class="d-flex h-100 align-items-center">
+                                <span><b style="font-size:36px">0</b></span>
+                                <h5 class="font-size-16 m-0 ml-3"> SmartScore out of 100 </h5>
+                                <ion-icon name="help-circle-outline" class="mr-3 text-dark" style="font-size:36px">
+                                </ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card cursor-pointer bg-info text-white analytic h-100 border-0" data-toggle="modal"
+                        data-target="#certificateModal">
+                        <div class="card-body">
+                            <div class="d-flex h-100 align-items-center">
+                                <h5 class="font-size-16 m-0">Time elapsed</h5>
+                                <div class="input-group mb-3">
+                                    <input type="time" class="form-control bg-info text-white border-white ml-3" value="00:01:14">
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex mb-3 align-items-center">
+                        <ion-icon name="volume-high-outline" class="mr-3" style="font-size:36px">
+                        </ion-icon>
+                        <h5 class="font-size-16 m-0">How many balls are there?</h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 mb-3">
+                            <img src="../images/logos/football.jpg" class="w-100" />
+                        </div>
+                        <div class="col-1 mb-3">
+                            <img src="../images/logos/football.jpg" class="w-100" />
+                        </div>
+                        <div class="col-1 mb-3">
+                            <img src="../images/logos/football.jpg" class="w-100" />
+                        </div>
+                        <div class="col-1 mb-3">
+                            <img src="../images/logos/football.jpg" class="w-100" />
+                        </div>
+                        <div class="col-1 mb-3">
+                            <img src="../images/logos/football.jpg" class="w-100" />
+                        </div>
+                        <div class="col-1 mb-3">
+                            <img src="../images/logos/football.jpg" class="w-100" />
+                        </div>
+                        <div class="col-1 mb-3">
+                            <img src="../images/logos/football.jpg" class="w-100" />
+                        </div>
+                        <div class="col-1 mb-3">
+                            <img src="../images/logos/football.jpg" class="w-100" />
+                        </div>
+                        <div class="col-1 mb-3">
+                            <img src="../images/logos/football.jpg" class="w-100" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="card p-3 count border-0">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <button class="btn btn-primary">1</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="btn btn-primary">2</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="btn btn-primary">3</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="btn btn-primary">4</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="btn btn-primary">5</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="btn btn-primary">6</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="btn btn-primary">7</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="btn btn-primary">8</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="btn btn-primary">9</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="btn btn-primary">10</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-info btn-lg my-4 font-size-16">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Analytic Section End's -->
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
