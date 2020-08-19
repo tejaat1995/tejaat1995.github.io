@@ -105,6 +105,108 @@
   color: #3bceac !important;
 }
 
+footer.footer {
+  width: 100%;
+  float: left;
+  padding: 40px 0 0;
+  background: #1a1a1a;
+}
+
+footer.footer .ftr-abt {
+  width: 80%;
+  float: left;
+}
+
+footer.footer .item {
+  color: #999;
+  margin: 25px 0;
+  font-size: 14px;
+  width: 100%;
+}
+
+footer.footer .item .footer-logo {
+  width: 120px;
+  margin-bottom: 5%;
+}
+
+footer.footer .item .contact-details {
+  width: 100%;
+  float: left;
+}
+
+footer.footer .item .contact-details ul li {
+  list-style: none;
+  padding-bottom: 15px;
+  margin-left: -40px
+}
+
+footer.footer .item .contact-details ul li a {
+  color: #999;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+footer.footer .item .choose-country {
+  width: 100%;
+  float: left;
+  margin-top: 5%;
+}
+
+footer.footer ul.quick-links {
+  width: 50%;
+  float: left;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+footer.footer ul.quick-links li {
+  padding: 3px 0;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+footer.footer ul.quick-links li a {
+  color: #999;
+  text-decoration: none;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+footer.footer .item p {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 3px 0;
+  line-height: 24px;
+}
+
+footer.footer ul.social {
+  float: left;
+  padding: 0;
+}
+
+footer.footer ul.social li:first-child {
+  padding-left: 0;
+}
+
+footer.footer ul.social li {
+  padding: 3px 8px;
+  float: left;
+  list-style: none;
+  font-size: 18px;
+}
+
+footer.footer ul.social li a {
+  color: #999;
+  text-decoration: none;
+  font-weight: 500;
+  transition: .5s all ease;
+}
+
 .footer-main {
   color: rgba(255, 255, 255, 0.4);
 }

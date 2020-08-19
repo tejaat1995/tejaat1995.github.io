@@ -96,14 +96,15 @@
             <h5 class="mt-4">Results</h5>
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
-                    <div class="card cursor-pointer analytic h-100 border-0" data-toggle="modal"
-                        data-target="#checkModal">
+                    <div class="card cursor-pointer analytic h-100 border-0">
                         <div class="card-body">
-                            <div class="d-flex h-100 align-items-center">
-                                <ion-icon name="documents-outline" class="mr-3" style="font-size:36px">
-                                </ion-icon>
-                                <h5 class="font-size-16 m-0">Check Results</h5>
-                            </div>
+                            <a href="../check_results/check_results.html" style="text-decoration: none !important;">
+                                <div class="d-flex h-100 align-items-center">
+                                    <ion-icon name="documents-outline" class="mr-3" style="font-size:36px">
+                                    </ion-icon>
+                                    <h5 class="font-size-16 m-0 text-dark">Check Results</h5>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -323,10 +324,14 @@
     <!-- Content List End's -->
 
     <!-- Take Test Button Start's -->
-    <button class="btn btn-info btn-lg rounded-pill font-size-16 position-fixed take-test" data-toggle="modal"
+    <!-- <button class="btn btn-info btn-lg rounded-pill font-size-16 position-fixed take-test" data-toggle="modal"
         data-target="#testModal">
         Take a test on grammer
-    </button>
+    </button> -->
+    <a class="btn btn-info btn-lg rounded-pill font-size-16 position-fixed take-test"
+        href="../take_a_test/take_a_test.html">
+        Take a test on grammer
+    </a>
     <!-- Take Test Button End's -->
 
     <!-- Test Modal Start's -->
@@ -452,7 +457,7 @@
     </div>
     <!-- Check Results Modal End's -->
 
-    <!-- Test Modal Start's -->
+    <!-- certificate Modal Start's -->
     <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -467,7 +472,7 @@
             </div>
         </div>
     </div>
-    <!-- Test Modal End's -->
+    <!-- certificate Modal End's -->
 
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->
